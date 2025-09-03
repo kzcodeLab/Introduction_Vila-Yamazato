@@ -1,0 +1,147 @@
+/* /assets/css/amenities.css */
+
+.section-amenities {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  background-color: #fdfcfb; /* A slightly off-white for warmth */
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-head h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.section-head .subtitle {
+  font-size: 1rem;
+  opacity: .7;
+  margin-top: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #f0e9e4; /* Softer border color */
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(160, 82, 45, .05); /* Soft, warm shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(160, 82, 45, .08);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.card h3 span {
+  font-size: 0.8rem;
+  opacity: .7;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+}
+
+.card hr {
+  border: none;
+  height: 1px;
+  background-color: #f0e9e4;
+  margin: 16px 0 20px;
+}
+
+.card ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 20px;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .card ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card li {
+  list-style: none;
+  padding-left: 1.2em;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.card li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  color: #a0522d; /* --color-wood from style.css */
+}
+
+.cta-row {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.cta-row .btn {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 9999px;
+    background-color: #3a5f7d; /* --color-primary from style.css */
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.cta-row .btn:hover, .cta-row .btn:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(58, 95, 125, .25);
+    outline: none;
+}
+
+/* Styles for Recommended Spots Section */
+#spots-container .section{margin-top:40px}
+#spots-container .section:first-child{margin-top:0}
+#spots-container .section h2{font-size:22px;margin-bottom:2px; font-family: 'Noto Sans JP', sans-serif;}
+#spots-container .section .en{font-size:12px;opacity:.65;margin:0 0 14px; font-family: 'Open Sans', sans-serif;}
+#spots-container .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 40px}
+@media (max-width:900px){#spots-container .grid{grid-template-columns:1fr}}
+#spots-container .card{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:start; text-align: left; padding: 0; border: none; box-shadow: none; background: none;}
+@media (max-width:640px){#spots-container .card{grid-template-columns:1fr}}
+#spots-container .card figure img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px}
+#spots-container .badge{display:inline-flex;align-items:center;justify-content:center;background:#F9E27A;border-radius:9999px;padding:8px 12px;font-size: 14px; font-weight:700; color: #333;}
+#spots-container .title-ja{font-size:18px;font-weight:700; margin:10px 0 2px}
+#spots-container .title-en{font-size:12px;opacity:.65;margin-bottom:8px}
+#spots-container .desc{line-height:1.7; font-size: 15px;}
+#spots-container .map{display:inline-block;margin-top:8px;text-decoration:underline; font-size: 14px;}

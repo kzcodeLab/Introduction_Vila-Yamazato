@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山里の家 | 沖縄の海と星空を望む一棟貸しの宿</title>
+    <meta name="description" content="久高島を望む眺望、夜は満天の星、朝は鳥のさえずり。沖縄南部の高台に佇む「山里の家」で、自然に包まれ、暮らすように過ごす特別なひとときを。">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/amenities.css">
+    <!-- Force rebuild -->
+    <style>
+        body { font-family: 'Noto Sans JP', system-ui, sans-serif; }
+        .hero-bg { background-image: url('images/ヘッダー.jpg'); }
+        /* Simple Parallax Effect */
+        .parallax { background-attachment: fixed; }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "山里の家 (Yamazato-no-ie)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "知念山里281-6",
+        "addressLocality": "南城市",
+        "addressRegion": "沖縄県",
+        "postalCode": "901-1412",
+        "addressCountry": "JP"
+      },
+      "description": "沖縄南部の高台に佇む、海と星空を望む一棟貸しの宿。",
+      "url": "（本番URL）",
+      "checkinTime": "15:00",
+      "checkoutTime": "11:00",
+      "image": "（代表画像のURL）"
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 px-6">
+        <div class="mx-auto py-3 flex justify-between items-center" style="max-width: 1100px;">
+            <a href="#" class="text-2xl font-bold text-green-900">山里の家</a>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.airbnb.jp/rooms/54211059" target="_blank" class="hidden sm:inline-block bg-green-800 text-white font-bold py-2 px-6 rounded-full hover:bg-green-700 transition-colors">Airbnbで予約</a>
+                <a href="https://www.instagram.com/yamazato_no_ie" target="_blank">
+                    <svg class="h-6 w-6 text-green-900 hover:text-green-700" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.153 2.153c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.153 2.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.153-2.153c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427A4.902 4.902 0 015.45 4.525c.636-.247 1.363.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.06-1.004.048-1.625.2-2.126.407a3.099 3.099 0 00-1.35 1.35c-.207.501-.358 1.122-.407 2.126-.049 1.023-.06 1.351-.06 3.807s.011 2.784.06 3.807c.048 1.004.2 1.625.407 2.126a3.099 3.099 0 001.35 1.35c.501.207 1.122.358 2.126.407 1.023.049 1.351.06 3.807.06h.468c2.456 0 2.784-.011 3.807-.06 1.004-.048 1.625-.2 2.126-.407a3.099 3.099 0 001.35-1.35c.207-.501.358-1.122.407-2.126.049-1.023.06-1.351.06-3.807s-.011-2.784-.06-3.807c-.048-1.004-.2-1.625-.407-2.126a3.099 3.099 0 00-1.35-1.35c-.501-.207-1.122-.358-2.126-.407-1.023-.049-1.351-.06-3.807-.06z" clip-rule="evenodd" /><path d="M12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 1.802a3.333 3.333 0 110 6.666 3.333 3.333 0 010-6.666zm5.338-3.205a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" /></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="h-screen hero-bg bg-cover bg-center flex items-start justify-center text-white parallax">
+    <div class="text-center p-8" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight" style="text-shadow: 0 2px 8px rgba(0,0,0,0.7);">沖縄南部の高台に佇む、<br>海と星空を望む一棟貸しの宿。</h1>
+                <p class="mt-4 text-lg md:text-xl" style="text-shadow: 0 2px 4px rgba(0,0,0,0.7);">久高島を望む眺望。夜は満天の星、朝は鳥の声。<br>自然に包まれ、暮らすように過ごすひとときを。</p>
+                <a href="https://www.airbnb.jp/rooms/54211059" target="_blank" class="mt-8 inline-block bg-blue-400 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-500 transition-colors text-lg">Airbnbで予約する</a>
+            </div>
+        </section>
+
+        
+
+        <!-- Space Features Section -->
+        <section class="py-12 md:py-20 bg-stone-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 text-left p-8" data-aos="fade-right">
+                        <h2 class="text-3xl font-bold mb-4">暮らすように過ごす時間</h2>
+                        <p class="leading-relaxed">
+                            シンプルで落ち着いた空間に、木のぬくもりを生かしたインテリア。<br>
+                            約98㎡のリビングは、家族や友人と過ごすのに十分な広さ。<br>
+                            大きな窓から差し込む光と海風が、心まで解きほぐしてくれます。
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 p-8" data-aos="fade-left">
+                        <img src="images/space Detail（ヒーローセクション）.jpg" alt="空間の特徴" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bedroom Section -->
+        <section class="py-12 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="md:w-1/2 text-left p-8" data-aos="fade-left">
+                        <h2 class="text-3xl font-bold mb-4">朝焼けと鳥の声で目覚める</h2>
+                        <p class="leading-relaxed">
+                            こだわりのベッドとリネンで、ゆったりと休息を。<br>
+                            朝は東の空から昇る朝日と鳥たちの声が、<br>
+                            新しい一日の始まりをやさしく知らせてくれます。
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 p-8" data-aos="fade-right">
+                        <img src="images/Bedroom(ヒーローセクション）.jpg" alt="寝室" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Garden Section -->
+        <section class="py-12 md:py-20 bg-stone-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 text-left p-8" data-aos="fade-right">
+                        <h2 class="text-3xl font-bold mb-4">豊かな自然の中で過ごせる庭</h2>
+                        <p class="leading-relaxed">
+                            庭には精霊が宿るとされるシンボルツリーの「ガジュマルの木」<br>
+                            遠くに久高島と広い海。<br>
+                            昼は爽やかな風に吹かれ、夜は満天の星空に包まれます。<br>
+                            BBQを楽しむのもよし、ただ海を眺めながら過ごすのも贅沢な時間です。
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 p-8" data-aos="fade-left">
+                        <img src="images/Garden view(ヒーローセクション）.jpg" alt="庭からの眺め" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+            </div>
+        </section>
+
+        <!-- 1. Living Room -->
+        <section class="py-12 md:py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="mb-16 md:mb-24">
+                    <!-- Headline Card -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 p-6 md:p-8 bg-stone-50 rounded-lg shadow-sm mb-12" data-aos="fade-up">
+                        <div class="md:w-1/2 text-left">
+                            <h2 class="text-2xl md:text-3xl font-bold mb-2">リビングルーム</h2>
+                            <p class="text-gray-600">約40㎡のリビングルームは、ご家族やご友人とゆったり過ごせる広さ。<br>
+ソファやテーブルを余裕をもって配置しているので、くつろぎながら会話や食事を楽しめます。<br>
+大きな窓の先には、どこまでも広がる海。<br>
+食卓を囲みながら海を眺める時間は、日常を忘れさせて特別な時間にしてくれるでしょう。</p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="images/Living Room(空間説明セクション）.jpg" alt="庭からの眺め" class="rounded-lg shadow-xl">
+                        </div>
+                    </div>
+
+                    <!-- Image Text -->
+                    <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4">海を望む、広々リビング</h3>
+                        <p class="text-base md:text-lg leading-relaxed text-gray-700">
+                            窓の外に広がるのは、青い海と久高島の景色。<br>
+                            素足で歩く木の床と、やわらかな自然光に包まれた空間。<br>
+                            思わず深呼吸したくなる、心も体も喜ぶリビングです。<br>
+                            約40㎡の広さがあるので、ご家族やグループでもゆったり過ごせます。
+                        </p>
+                    </div>
+
+                    <!-- Photo Grid -->
+                    <div class="max-w-5xl mx-auto">
+                        <div class="grid grid-cols-4 grid-rows-2 gap-4" style="height: 512px;">
+                            <img src="images/Living2.jpg" class="rounded-lg w-full h-full object-cover">
+                            <img src="images/Living3.jpg" class="rounded-lg w-full h-full object-cover">
+                            <img src="images/Living1.jpg" class="rounded-lg w-full h-full object-cover col-span-2 row-span-2">
+                            <img src="images/Living4.jpg" class="rounded-lg w-full h-full object-cover">
+                            <img src="images/Living5.jpg" class="rounded-lg w-full h-full object-cover">
+                        </div>
+                        <div class="grid grid-cols-4 grid-rows-2 gap-4 mt-4" style="height: 512px;">
+                            <img src="images/Living6.jpg" class="rounded-lg w-full h-full object-cover col-span-2 row-span-2">
+                            <img src="images/Living7.jpg" class="rounded-lg w-full h-full object-cover">
+                            <img src="images/Living8.jpg" class="rounded-lg w-full h-full object-cover">
+                            <img src="images/Living9.jpg" class="rounded-lg w-full h-full object-cover">
+                            <img src="images/Living10.jpg" class="rounded-lg w-full h-full object-cover">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Bedroom -->
+        <section class="py-12 md:py-20 bg-stone-50">
+            <div class="container mx-auto px-6">
+                <div class="mb-16 md:mb-24">
+                    <!-- Headline Card -->
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 p-6 md:p-8 bg-white rounded-lg shadow-sm mb-12" data-aos="fade-up">
+                        <div class="md:w-1/2 text-left">
+                            <h2 class="text-2xl md:text-3xl font-bold mb-2">ベッドルーム</h2>
+                            <p class="text-gray-600">ベッドルームはダブルベッド2台、セミダブルベッド2台の2部屋あります。<br>4名以上の場合はロフトに布団を2組設置できます。<br>ご宿泊人数に合わせ組み合わせは自由です</p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="images/Bedroom Main.jpg" alt="ベッドルーム" class="rounded-lg w-full h-96 object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Image Text -->
+                    <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4">朝焼けに包まれるベッドルーム</h3>
+                        <p class="text-base md:text-lg leading-relaxed text-gray-700">
+                            東の窓から差し込む光で、穏やかに目覚める朝。<br>
+                            こだわりの寝具は肌にやさしい素材を使用し、旅の疲れを癒してくれます。<br>
+                            セミダブルやダブルベッドは繋げて使えるので、小さなお子さま連れでも安心。<br>
+                            ロフトには布団スペースもあり、最大6名まで快適にお休みいただけます。
+                        </p>
+                    </div>
+
+                    <!-- Photo Grid Row 1 -->
+                    <div class="max-w-5xl mx-auto">
+                        <div class="flex flex-col md:flex-row gap-4 mb-4" style="height: 600px;" data-aos="fade-up">
+                            <div class="md:w-1/2 flex flex-col gap-4">
+                                <img src="images/Bed Detail1.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                                <img src="images/Bed Detail2.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                                <img src="images/Bed Detail3.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                            </div>
+                            <div class="md:w-1/2">
+                                <img src="images/Bedroom View.jpg" class="rounded-lg w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Photo Grid Row 2 -->
+                        <div class="flex flex-col md:flex-row gap-4 mb-4" style="height: 600px;" data-aos="fade-up">
+                            <div class="md:w-1/2">
+                                <img src="images/Bed Amenity.jpg" class="rounded-lg w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-1/2 flex flex-col gap-4">
+                                <img src="images/Bed Detail4.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                                <img src="images/Bed Detail5.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                                <img src="images/Bed Detail6.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                            </div>
+                        </div>
+
+                        <!-- Photo Grid Row 3 -->
+                        <div class="flex flex-col md:flex-row gap-4" style="height: 600px;" data-aos="fade-up">
+                            <div class="md:w-1/2 flex flex-col gap-4">
+                                <img src="images/Bed Detail7.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                                <img src="images/Bed Detail8.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                                <img src="images/Bed Detail9.jpg" class="rounded-lg w-full flex-1 object-cover" style="min-height: 0;">
+                            </div>
+                            <div class="md:w-1/2">
+                                <img src="images/Loft Space.jpg" class="rounded-lg w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Amenities -->
+        <section class="py-12 md:py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="mb-16 md:mb-24">
+                    <!-- Headline Card -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 p-6 md:p-8 bg-stone-50 rounded-lg shadow-sm mb-12" data-aos="fade-up">
+                        <div class="md:w-1/2 text-left">
+                            <h2 class="text-2xl md:text-3xl font-bold mb-2">山里の家にあるもの</h2>
+                            <p class="text-gray-600">暮らすように滞在いただける安心感を大切に、キッチンや洗濯機などの生活設備を整えています。長期のご滞在でも快適にお過ごしいただけるよう配慮しました。</p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="images/Amenities.jpg" alt="設備" class="rounded-lg w-full h-96 object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Image Text -->
+                    <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4">暮らすように滞在する設備</h3>
+                        <p class="text-base md:text-lg leading-relaxed text-gray-700">
+                            ”暮らすように沖縄に滞在する”を叶えるため、<br>
+                            フルキッチン、冷蔵庫、炊飯器、調理器具をはじめ、<br>
+                            洗濯機やWi-Fi、エアコンなど生活に必要な備品を完備。<br>
+                            生活に必要な殆どの備品を備えています。
+                        </p>
+                    </div>
+
+                    <!-- Photo Grid Row 1 -->
+                    <div class="max-w-5xl mx-auto">
+                        <div class="flex flex-col md:flex-row gap-4 mb-4" style="height: 600px;" data-aos="fade-up">
+                            <div class="md:w-1/2 grid grid-cols-2 grid-rows-2 gap-4">
+                                <img src="images/Amenity1.jpg" class="rounded-lg w-full h-full object-cover">
+                                <img src="images/Amenity2.jpg" class="rounded-lg w-full h-full object-cover">
+                                <img src="images/Amenity3.jpg" class="rounded-lg w-full h-full object-cover">
+                                <img src="images/Amenity4.jpg" class="rounded-lg w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-1/2">
+                                <img src="images/Kitchen.jpg" class="rounded-lg w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Photo Grid Row 2 -->
+                        <div class="flex flex-col md:flex-row gap-4" style="height: 600px;" data-aos="fade-up">
+                            <div class="md:w-1/2">
+                                <img src="images/Washing machine.jpg" class="rounded-lg w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-1/2 grid grid-cols-2 grid-rows-2 gap-4">
+                                <img src="images/Amenity5.jpg" class="rounded-lg w-full h-full object-cover">
+                                <img src="images/Amenity6.jpg" class="rounded-lg w-full h-full object-cover">
+                                <img src="images/Amenity7.jpg" class="rounded-lg w-full h-full object-cover">
+                                <img src="images/Amenity8.jpg" class="rounded-lg w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="section-amenities">
+            <header class="section-head">
+                <h2>アメニティ・設備</h2>
+                <p class="subtitle">Amenities &amp; Facilities</p>
+            </header>
+            <div class="cards">
+                <!-- Card: アメニティ -->
+                <article class="card" data-aos="fade-up">
+                    <h3>アメニティ <span>amenity</span></h3>
+                    <hr />
+                    <ul>
+                        <li>バスタオル</li>
+                        <li>ハンドタオル</li>
+                        <li>シャンプー</li>
+                        <li>リンス</li>
+                        <li>ボディソープ</li>
+                        <li>ドライヤー</li>
+                        <li>洗濯洗剤</li>
+                        <li>綿棒</li>
+                        <li>収納リネン類</li>
+                        <li>清掃用品</li>
+                        <li>ハンガー</li>
+                        <li>アイロン</li>
+                    </ul>
+                </article>
+                <!-- Card: キッチン用品 -->
+                <article class="card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>キッチン用品 <span>kitchen tool</span></h3>
+                    <hr />
+                    <ul>
+                        <li>冷蔵庫</li>
+                        <li>炊飯器</li>
+                        <li>レンジ</li>
+                        <li>トースター</li>
+                        <li>電気ポット</li>
+                        <li>鍋／フライパン</li>
+                        <li>包丁／まな板／ボウル</li>
+                        <li>カトラリー一式</li>
+                        <li>子供用カトラリー</li>
+                        <li>グラス／お皿</li>
+                        <li>調味料（塩・砂糖・油など）</li>
+                        <li>コーヒーメーカー：ドリップ式</li>
+                    </ul>
+                </article>
+                <!-- Card: 設備 -->
+                <article class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>設備 <span>facilities</span></h3>
+                    <hr />
+                    <ul>
+                        <li>洗濯機</li>
+                        <li>エアコン</li>
+                        <li>Wi-Fi（高速回線）</li>
+                        <li>ハイビジョンテレビ</li>
+                        <li>駐車場3台（無料）</li>
+                        <li>無線LAN（無料）</li>
+                        <li>シーリングファン</li>
+                        <li>食器洗い機</li>
+                        <li>ダイニングテーブル</li>
+                        <li>ソファ</li>
+                    </ul>
+                </article>
+                <!-- Card: ファミリー向け -->
+                <article class="card" data-aos="fade-up">
+                    <h3>ファミリー向け <span>for family</span></h3>
+                    <hr />
+                    <ul>
+                        <li>ベビーベッド（リクエストに応じて）</li>
+                        <li>子ども向けの本やおもちゃ</li>
+                        <li>ベビーチェア（リクエストに応じて）</li>
+                        <li>ベビーモニター（リクエストに応じて）</li>
+                        <li>ボードゲーム</li>
+                    </ul>
+                </article>
+                <!-- Card: 屋外 -->
+                <article class="card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>屋外 <span>outdoor</span></h3>
+                    <hr />
+                    <ul>
+                        <li>屋外家具（キャンピングチェア）</li>
+                        <li>専用バーベキューグリル：木炭</li>
+                    </ul>
+                </article>
+                <!-- Card: 注意事項 -->
+                <article class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>注意事項 <span>rules</span></h3>
+                    <hr />
+                    <ul>
+                        <li>パーティー・イベント不可</li>
+                        <li>宿泊者以外の立入禁止</li>
+                        <li>屋内は禁煙（屋外は可）</li>
+                        <li>屋内火気厳禁（キャンドル等）</li>
+                        <li>近隣への迷惑行為はご遠慮ください</li>
+                    </ul>
+                </article>
+            </div>
+            
+        </section>
+
+        <!-- Recommended Spots Section -->
+        <section id="recommended-spots" class="py-12 md:py-20 bg-stone-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold">山里の家 周辺の観光情報</h2>
+                    <p class="text-gray-600 mt-2 text-lg">tourist infomation</p>
+                </div>
+
+                <!-- Category Navigation -->
+                <div class="flex justify-center space-x-4 mb-12" data-aos="fade-up">
+                    <a href="#spots-breakfast" class="scroll-link bg-white border border-gray-300 text-gray-700 font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition-colors">Breakfast</a>
+                    <a href="#spots-lunch" class="scroll-link bg-white border border-gray-300 text-gray-700 font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition-colors">Lunch</a>
+                    <a href="#spots-dinner" class="scroll-link bg-white border border-gray-300 text-gray-700 font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition-colors">Dinner</a>
+                </div>
+
+                <!-- Spots Sections -->
+                <div class="space-y-16">
+
+                    <!-- Breakfast Section -->
+                    <section id="spots-breakfast" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Breakfast</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            <!-- Spot Card 1 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/cafe lush.png" alt="cafe_lush ~ beach house" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">cafe_lush ~ beach house</h4>
+                                    <p class="text-gray-700 mb-4">宿から徒歩圏内で行けるカフェ。木の温もりに包まれた心地よい空間の中で、おにぎりやホットサンドが楽しめます。。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約1分（徒歩圏内）</p>
+                                        <a href="https://www.google.com/maps/place/cafe_lush%E3%80%9C%E6%B5%B7%E3%81%AE%E5%AE%B6%E3%80%9C%F0%9F%8C%B4%E6%B2%96%E7%B8%84%E5%8D%97%E5%9F%8E%E5%B8%82%E5%BA%97/@26.1577302,127.8035773,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56f13fc82727b:0x9670974c09af8abd!8m2!3d26.1577302!4d127.8061522!16s%2Fg%2F11vr1zrhy8?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 2 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/hamabe no chaya.png" alt="浜辺の茶屋" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">浜辺の茶屋 / Hamabe no chaya</h4>
+                                    <p class="text-gray-700 mb-4">波の音とエメラルドグリーンの海を一望できる木造カフェ。非日常感あふれる景色の中で、パンやおにぎりの朝食プレートを楽しめます。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約5分から10分</p>
+                                        <a href="https://www.google.com/maps/place/%E6%B5%9C%E8%BE%BA%E3%81%AE%E8%8C%B6%E5%B1%8B/@26.1335308,127.782071,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56fc8f9810001:0xc15da1af306772af!8m2!3d26.1335308!4d127.7846459!16s%2Fg%2F1tm_zzvp?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Lunch Section -->
+                    <section id="spots-lunch" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Lunch</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            <!-- Spot Card 1 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/mimosa no ki.png" alt="ピザ喫茶ミモザの木" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">ピザ喫茶ミモザの木 / Pizza Cafe Mimosa no Ki</h4>
+                                    <p class="text-gray-700 mb-4">木の温かみを感じる空間で、街と海を見渡す贅沢な眺めが楽しめるカフェで、店主こだわりのピザやコーヒーが楽しめます。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/place/%E3%83%94%E3%82%B6+%E5%96%AB%E8%8C%B6+%E3%83%9F%E3%83%A2%E3%82%B6%E3%81%AE%E6%9C%A8/@26.1718426,127.7657483,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56ef7b988c159:0x70b8e118ec5d2e3b!8m2!3d26.1718426!4d127.7657483!16s%2Fg%2F11c1n31s64?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 2 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/okinawa soba mine.png" alt="沖縄そば 峰" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">沖縄そば 峰 / Okinawa soba Mine</h4>
+                                    <p class="text-gray-700 mb-4">美味しいスープと麺が楽しめる沖縄そばのお店です。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/place/%E6%B2%96%E7%B8%84%E3%81%9D%E3%81%B0+%E5%B3%B0/@26.1393836,127.7767096,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56f621700eb71:0x617d4bf3f7d3223d!8m2!3d26.1393836!4d127.7792845!16s%2Fg%2F11h3mhv465?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 3 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/shokudo Karika.png" alt="食堂かりか" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">食堂かりか / Shokudo Karika</h4>
+                                    <p class="text-gray-700 mb-4">新原ビーチにあるネパール料理が楽しめるお店で、カレーが絶品です。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/place/%E9%A3%9F%E5%A0%82%E3%81%8B%E3%82%8A%E3%81%8B/@26.1338411,127.7859472,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56feaa4040209:0x83f4098675528479!8m2!3d26.1338411!4d127.7885221!16s%2Fg%2F119tf0lpl?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 4 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Tamaya Soba.png" alt="そば処 玉家そば" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">そば処 玉家そば / Tamaya Soba</h4>
+                                    <p class="text-gray-700 mb-4">地元の人に愛される沖縄そば専門店。すっきりしたスープがたまらないです。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/place/%E3%81%9D%E3%81%B0%E5%87%A6+%E7%8E%89%E5%AE%B6%E3%81%9D%E3%81%B0/@26.1908302,127.7038694,10825m/data=!3m1!1e3!4m10!1m2!2m1!1z44Gd44Gw5YemIOeOieWutuOBneOBsA!3m6!1s0x34e56e961c3459c7:0x63730577267adf16!8m2!3d26.1908361!4d127.7450694!15sChbjgZ3jgbDlh6Yg546J5a6244Gd44GwWhsiGeOBneOBsCDlh6Yg546JIOWutiDjgZ3jgbCSAQtub29kbGVfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VRMU4wcFVZVGhSUlJBQqoBQhABMh8QASIbqmVEHagMuX6sZBv5M6CVO4egy2KQwBPdCsOGMh0QAiIZ44Gd44GwIOWHpiDnjokg5a62IOOBneOBsOABAPoBBAg5ECI!16s%2Fg%2F1tgd94ps?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 5 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Thai Cuisine Siam.png" alt="タイ料理レストラン シャム" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">タイ料理レストラン シャム / Thai Cuisine Siam</h4>
+                                    <p class="text-gray-700 mb-4">自家栽培のハーブやタイ産のスパイスを使った本格料理をリーズナブルな価格で楽しめます。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/place/%E3%82%BF%E3%82%A4%E6%96%99%E7%90%86+%E3%82%B7%E3%83%A3%E3%83%A0/@26.1452131,127.7655762,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56f2c5da68437:0x9dac395aa68b033a!8m2!3d26.1452131!4d127.7681511!16s%2Fg%2F11ft8w_f3g?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 6 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Cafe Kurukuma.png" alt="カフェくるくま" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">カフェくるくま / Cafe Kurukuma</h4>
+                                    <p class="text-gray-700 mb-4">海を眺めながらカレー、焼きそば、トムヤムクンなど本格的なタイ料理を楽しめる高台のカフェです。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/search/%E3%82%AB%E3%83%95%E3%82%A7%E3%81%8F%E3%82%8B%E3%81%8F%E3%81%BE/@26.162326,127.8098191,677m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 7 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Tamagusuku Shokudou.png" alt="玉城食堂" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">玉城食堂 / Tamagusuku Shokudou</h4>
+                                    <p class="text-gray-700 mb-4">地域で活用していた公民館を再利用したおしゃれな食堂です。お昼は台湾料理、夜は創作料理が楽しめます。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/place/%E7%8E%89%E5%9F%8E%E9%A3%9F%E5%A0%82/@26.1369275,127.7799462,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56f5361a2cc4b:0xff6a1f5290994b3e!8m2!3d26.1369275!4d127.7825211!16s%2Fg%2F11jnvwfmj0?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 8 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/cream.png" alt="cream" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">cream</h4>
+                                    <p class="text-gray-700 mb-4">レンガ色の建物で素敵なカフェで、お昼はお店こだわりのランチプレートが人気です。ボリュームあるパフェもおすすめです。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約5分</p>
+                                        <a href="https://www.google.com/maps/place/cream/@26.1602909,127.7911911,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56f001ca3d1f5:0x73890cb381429250!8m2!3d26.1602909!4d127.793766!16s%2Fg%2F11vm8n4hy0?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Dinner Section -->
+                    <section id="spots-dinner" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Dinner</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            <!-- Spot Card 1 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Izakaya Gurukun.png" alt="居酒屋ぐるくん" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">居酒屋ぐるくん / Izakaya Gurukun</h4>
+                                    <p class="text-gray-700 mb-4">名物ソーメンちゃんぷるーをはじめ、鮮魚の唐揚げ・煮付け・バター焼きが絶品。地元の人も観光客も集うアットホームな空間で、沖縄の夜を満喫できます。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分</p>
+                                        <a href="https://www.google.com/maps/place/%E5%B1%85%E9%85%92%E5%B1%8B%E3%81%90%E3%82%8B%E3%81%8F%E3%82%93/@26.1623113,127.7907553,677m/data=!3m3!1e3!4b1!5s0x34e56e30ae577ec3:0xc0d81435627c74ab!4m6!3m5!1s0x34e56e30ae5a2cfb:0x5c48678fbf2a4edd!8m2!3d26.1623113!4d127.7933302!16s%2Fg%2F12qf6fy1v?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 2 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Ojima Kaisanbutsu Shokudo.png" alt="奥武島海産物食堂" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">奥武島海産物食堂 / Ojima Kaisanbutsu Shokudo</h4>
+                                    <p class="text-gray-700 mb-4">漁港すぐそば、地元に愛される食堂。毎日仕入れる新鮮な魚を定食や丼で楽しめます。名物は魚一匹を丸ごと使ったバター焼きです。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分-15分</p>
+                                        <a href="https://www.google.com/maps/place/%E5%A5%A5%E6%AD%A6%E5%B3%B6%E6%B5%B7%E7%94%A3%E7%89%A9%E9%A3%9F%E5%A0%82/@26.1315969,127.7712072,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34fa9b9e97fe8659:0x8d6658489261682e!8m2!3d26.1315969!4d127.7737821!16s%2Fg%2F1wj_3t6h?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 3 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Izakaya Ushio.png" alt="うしお居酒屋" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">うしお居酒屋 / Izakaya Ushio</h4>
+                                    <p class="text-gray-700 mb-4">地元・観光客の方に人気の居酒屋です。海の幸から沖縄料理まで幅広く楽しめます。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約15分</p>
+                                        <a href="https://www.google.com/maps/place/%E3%81%86%E3%81%97%E3%81%8A/@26.182746,127.7744741,677m/data=!3m2!1e3!4b1!4m6!3m5!1s0x34e56e68aacea05d:0x358456cef04fa0a0!8m2!3d26.182746!4d127.777049!16s%2Fg%2F1tf6378n?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spot Card 4 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src="images/Izakaya Tsune.png" alt="割烹常" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-bold text-xl mb-2">割烹常 / Izakaya Tsune</h4>
+                                    <p class="text-gray-700 mb-4">旬の魚介や野菜を活かした割烹料理に加え、チャンプルーなど沖縄料理も充実。一品料理からセットまで楽しめます。</p>
+                                    <div class="flex items-center justify-between text-sm">
+                                        <p class="text-gray-600">車で約10分</p>
+                                        <a href="https://www.google.com/maps/place/%E5%89%B2%E7%83%B9%E5%B8%B8/@26.1570317,127.7775512,17z/data=!3m1!4b1!4m6!3m5!1s0x34e56e4cd22524ed:0xfaf79a6edade5f2e!8m2!3d26.1570317!4d127.7801261!16s%2Fg%2F1tg4j3sz?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="text-blue-500 hover:underline">Google Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Access Digest -->
+        <section class="py-20 bg-white" data-aos="fade-up">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Access</h2>
+                <p class="mb-8 max-w-4xl mx-auto text-center">那覇空港から車で約40〜50分、沖縄南部の自然あふれるエリアにございます。<br>観光スポットや飲食店へは車での移動が中心となりますので、<br>快適にお過ごしいただくためにレンタカーのご利用をおすすめいたします。</p>
+
+                <!-- Google Map -->
+                <div class="w-full max-w-4xl mx-auto my-12 rounded-lg shadow-xl overflow-hidden">
+                    <div class="relative h-0" style="padding-bottom: 75%;"> <!-- 4:3 Aspect Ratio -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1907.1205222772307!2d127.80204448815975!3d26.15407285380255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDA5JzE1LjkiTiAxMjfCsDQ4JzA4LjAiRQ!5e0!3m2!1sja!2sjp!4v1756599074900!5m2!1sja!2sjp" class="absolute top-0 left-0 w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Bus and Taxi Information -->
+                <div class="max-w-4xl mx-auto mt-[-2rem] mb-12 p-8 bg-stone-50 rounded-lg text-left text-gray-700">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">バスをご利用の場合</h3>
+                        <ol class="list-decimal list-inside space-y-2">
+                            <li>空港から那覇バスターミナルへ。<br><span class="text-sm text-gray-600 pl-5">（空港からモノレールで旭橋駅下車でもアクセス可能です）</span></li>
+                            <li>那覇バスターミナルから37番の南城市役所行きに乗車し、南城市役所で下車。</li>
+                            <li>市役所から市内周遊Nバス（A2系統・知念方面）に乗り換え、「志喜屋入口」で下車後、徒歩約8分です。</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">タクシーをご利用の場合</h3>
+                        <p>那覇空港から約40分〜50分ほどです。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-blue-50 py-20">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800">ご予約はこちらから</h2>
+                <p class="my-4 text-gray-600">ご予約はAirbnbのサイトで承っております。</p>
+                <a href="https://www.airbnb.jp/rooms/54211059" target="_blank" class="mt-4 inline-block bg-blue-400 text-white font-bold py-4 px-10 rounded-full hover:bg-blue-500 transition-colors text-xl">Airbnbで予約する</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <p>山里の家 (Yamazato-no-ie)</p>
+            <p class="text-sm mt-1">沖縄県南城市知念山里281-6</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.instagram.com/yamazato_no_ie" target="_blank" class="text-sm hover:underline">Instagram</a>
+                <a href="#" class="text-sm hover:underline">利用規約</a>
+            </div>
+            <p class="text-xs mt-8 text-gray-400">&copy; 2025 山里の家. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('a.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- Force re-deploy -->
